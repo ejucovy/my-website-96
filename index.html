@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Michael Snook</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://google.comstatic/css/bootstrap-3.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://google.comstatic/css/candidate.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://google.comstatic/css/colors_and_typography.css">
+</head>
+  <body>
+  
+     <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button>
+
+
+              <div class="logo">
+               <a href="http://google.com">
+						
+                <div class="logo-text">
+                  <hgroup>
+                    <h1>Michael Snook</h1>
+										
+                    <h2>for Congress</h2>
+                    
+                  </hgroup>
+                  
+                </div>
+                
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="collapse navbar-collapse">
+              <ul class="pull-right">
+                <li>
+                  <a href="http://google.comcontact">Contact</a>
+                </li>
+
+                <li>
+                  <a href="http://google.comvolunteer">Volunteer</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    
+    
+    
+
+
+ <div id="hero" class="breaker cf">
+    <!-- social -->
+
+    <div class="social-links container">
+    <div class="row">
+    <div class="col-lg-12">
+      <div class="pull-right">
+      
+      
+  
+      
+      
+      </div>
+      </div>
+      </div>
+    </div>
+		
+    <div class="container">
+    
+         <div class="row">
+    <div id="hero-content" class="col-lg-12 clearfix">
+        <div class="row">
+        <div id="photoblock" class="col-lg-8 col-md-8">
+         
+          <div id="myCarousel" class="carousel slide">
+            
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://farm6.staticflickr.com/5486/10328672306_11e550d521_z.jpg" alt="">
+
+								
+           
+          </div>
+          
+        </div>
+				
+				</div>
+
+        <div id="summary" class="col-lg-4 col-md-4">
+        
+          <div class="content">
+            
+            <h1>Why I'm Running</h1>
+
+						<!-- short summary -->
+						I do what I want.
+						<!-- end summary -->
+						
+						
+            <h1>Get Updates</h1>
+
+            <form id="signup">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <input type="email" class="form-control" placeholder="email" name="email" id="email">
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <input type="text" class="form-control" placeholder="zip" name="zip" id="zip">
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <button class="action" value="Sign Up">Sign Up</button>
+                </div>
+              </div>
+            </form>
+            <hr>
+            <a class="secondary btn action" href="#">Sign up to volunteer</a>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+    
+    
+    <footer id="footer cf">
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <ul>
+        
+              <li>
+                <a href="http://google.comcontact">Contact</a>
+              </li> 
+              
+              <li>
+                <a href="http://google.comvolunteer">Volunteer</a>
+              </li>
+
+         		
+
+							
+
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+         <a href="http://google.com">
+            <div class="logo">
+        
+          <div class="logo-text">
+            <hgroup>
+               <h1>Michael Snook</h1>
+										
+                    <h2>for Congress</h2>
+                    
+            </hgroup>
+          </div>
+          
+        </a>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+        
+    <script type="text/javascript" src="http://google.comstatic/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+      var eventer = window[eventMethod];
+      var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+      eventer(messageEvent,function(e) {
+        data = JSON.parse(e.data);
+console.log(data);
+        if( data.source !== "pies" ) return;
+        data = data.message;
+        for( var i=0; i<data.length; ++i ) {
+          var msg = data[i];
+          if( msg.command == "css" ) {
+            $(msg.selector).css(msg.attribute, msg.value);
+          } else if( msg.command == "attr" ) {
+            $(msg.selector).attr(msg.attribute, msg.value);
+          } else if( msg.command == "html" ) {
+            $(msg.selector).html(msg.value);
+          }
+        }
+      }, false);
+
+      if( window.parent && window.parent.location.origin == "https://pies.pccc.co" 
+          && window.parent.postMessage ) {
+        $("[data-pies-clickable]").on("click", function() {
+          var data = JSON.stringify({"source": "pies", 
+                                     "message": $(this).data("pies-clickable")});
+          window.parent.postMessage(data, "https://pies.pccc.co");
+        });
+      }
+    </script>
+    
+  <script src="http://google.comstatic/js/jquery.1.8.3.min.js" type="text/javascript">
+</script><script src="http://google.comstatic/js/bootstrap-3.js" type="text/javascript"></script>
+
+
+
+
+
+
+  </body>
+</html>     
